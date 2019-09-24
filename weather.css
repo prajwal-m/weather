@@ -1,12 +1,83 @@
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    background-image: url('https://images.unsplash.com/photo-1479759382005-7c3eff556bdb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=80');
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 100vw;
-    height: 100vh;
+  background-image: url("https://images.unsplash.com/photo-1497163326116-446ff9cbfe51?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1489&q=80");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.input-field {
+  text-align: center;
+  padding: 20px;
+}
+
+.header {
+  color: white;
+  margin-bottom: 30px;
+}
+
+input[type="text"] {
+  background-color: transparent;
+  color: white;
+  border: none;
+  outline: none;
+  display: block;
+  margin: 20px auto;
+  border-bottom: 1px solid white;
+  width: 500px;
+  font-size: 20px;
+}
+
+#submitLocation {
+  width: 80px;
+  height: 40px;
+  background-color: transparent;
+  outline: white;
+}
+
+.display-card {
+  height: 500px;
+  width: 600px;
+  background-color: black;
+  opacity: 0.6;
+  margin: 20px auto;
+}
+
+.icon {
+  display: block;
+  margin: 15px auto;
+  height: 120px;
+  width: 120px;
+  display: none;
+}
+
+.display-block {
+  display: block;
+}
+
+.city,
+.weather-condition {
+  color: white;
+  text-align: center;
+  padding: 15px;
+  font-size: 25px;
+}
+
+.labels,
+.temperature,
+.humidity,
+.pressure,
+.wind-speed {
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-size: 25px;
+}
+
+.data-div {
+  margin: 30px;
+  margin-bottom: 50px;
 }

@@ -1,23 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <title>Weather App</title>
     <link rel="stylesheet" type="text/css" href="weather.css" />
-</head>
+  </head>
 
-<body>
-    <h2>Choose Location</h2>
-    <span id="error"></span>
-    <input type="text" name="city" id="city" placeholder="City Name" />
-    <button id="submitLocation">Find</button>
-    <div id="show">
-        <img class="icon" />
+  <body>
+    <div class="input-field">
+      <h2 class="header">Weather</h2>
+      <input type="text" name="city" id="city" placeholder="City Name" />
+      <button id="submitLocation">Find</button>
     </div>
 
-    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
-    <script src="weather.js"></script>
-</body>
+    <div id="show" class="display-card">
+      <p class="city">select city</p>
+      <img class="icon" />
+      <p class="weather-condition"></p>
+      <div class="temp-data data-div">
+        <span class="labels">Temperature :</span>
+        <span class="temperature">N/A</span>
+        <span class="labels">Humidity :</span>
+        <span class="humidity">N/A</span>
+      </div>
+      <div class="pressure-data data-div">
+        <span class="labels">Pressure :</span>
+        <span class="pressure">N/A</span>
+        <span class="labels">Wind-Speed :</span>
+        <span class="wind-speed">N/A</span>
+      </div>
+    </div>
 
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.js"
+      integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+      crossorigin="anonymous"
+    ></script>
+    <script src="weather.js"></script>
+  </body>
 </html>
